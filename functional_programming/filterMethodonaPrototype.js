@@ -14,4 +14,13 @@ Array.prototype.myFilter = function(callback) {
   
     return newArray;
   }
-  
+  //Second Option
+  Array2.prototype.myFilter = function(callback) {
+  let newArray2 = [];
+  this.forEach(function(individualElement){
+    if(callback(individualElement)){
+        newArray2.push(individualElement);
+    }
+  });
+  return newArray2;
+}
